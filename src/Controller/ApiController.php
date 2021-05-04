@@ -29,7 +29,7 @@ class ApiController extends AbstractController
         return $response = $this->json($commentaireAtelierRepository->findBy(['atelier' => $id]), 200, []);
     }
     /**
-     * @Route("/apip/activites_sequence/{id}", name="activites_sequence", methods={"GET"})
+     * @Route("/api/activites_sequence/{id}", name="activites_sequence", methods={"GET"})
      */
     public function activites_sequence(ActiviteSequenceTheoriqueRepository $activitesequencetheoriqueRepository, $id)
     {
@@ -37,7 +37,7 @@ class ApiController extends AbstractController
     }
 
     /**
-     * @Route("/apip/activite_sequence/{activite}/{sequence}", name="activite_sequence", methods={"GET"})
+     * @Route("/api/activite_sequence/{activite}/{sequence}", name="activite_sequence", methods={"GET"})
      */
     public function activite_sequence(ActiviteSequenceTheoriqueRepository $activitesequencetheoriqueRepository, $activite, $sequence)
     {
